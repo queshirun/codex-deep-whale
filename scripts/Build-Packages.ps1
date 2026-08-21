@@ -10,7 +10,7 @@ $repositoryRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $outputRoot = [System.IO.Path]::GetFullPath($OutputDirectory)
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 $createdAt = '2026-08-21T00:00:00Z'
-$version = '1.1.0'
+$version = '1.4.2'
 
 $notice = [System.IO.File]::ReadAllText((Join-Path $repositoryRoot 'NOTICE.md'))
 $license = [System.IO.File]::ReadAllText((Join-Path $repositoryRoot 'LICENSE'))
@@ -104,21 +104,36 @@ foreach ($package in $packages) {
   if (Test-Path -LiteralPath $archivePath) {
     Remove-Item -LiteralPath $archivePath -Force
   }
-  [System.IO.Compression.ZipFile]::CreateFromDirectory(
-    $themeRoot,
+  $archive = [System.IO.Compression.ZipFile]::Open(
     $archivePath,
-    [System.IO.Compression.CompressionLevel]::Optimal,
-    $false
+    [System.IO.Compression.ZipArchiveMode]::Create
   )
+  try {
+    foreach ($payloadPath in @(
+      $themePath,
+      $imagePath,
+      $cssPath,
+      $packageLicensePath,
+      $manifestPath
+    )) {
+      [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile(
+        $archive,
+        $payloadPath,
+        [System.IO.Path]::GetFileName($payloadPath),
+        [System.IO.Compression.CompressionLevel]::Optimal
+      ) | Out-Null
+    }
+  }
+  finally {
+    $archive.Dispose()
+  }
   $archiveHash = (Get-FileHash -LiteralPath $archivePath -Algorithm SHA256).Hash.ToLowerInvariant()
   $checksums.Add("$archiveHash  $($package.Archive)")
   Write-Host "Built $archivePath"
 }
 
-[System.IO.File]::WriteAllText(
-  (Join-Path $outputRoot 'SHA256SUMS.txt'),
-  (($checksums -join "`n") + "`n"),
-  $utf8
-)
+$checksumText = ($checksums -join "`n") + "`n"
+[System.IO.File]::WriteAllText((Join-Path $outputRoot 'SHA256SUMS.txt'), $checksumText, $utf8)
+[System.IO.File]::WriteAllText((Join-Path $outputRoot "SHA256SUMS-v$version.txt"), $checksumText, $utf8)
 
 Write-Host "Wrote $(Join-Path $outputRoot 'SHA256SUMS.txt')"

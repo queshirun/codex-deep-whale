@@ -1,7 +1,7 @@
 {
   "packageVersion": 1,
   "themeId": "codex-deep-whale.maid-day",
-  "version": "1.1.0",
+  "version": "1.4.2",
   "skinApiVersion": 1,
   "minClientVersion": "1.5.0",
   "platforms": [
@@ -26,8 +26,8 @@
     {
       "path": "theme.json",
       "mediaType": "application/json",
-      "bytes": 992,
-      "sha256": "d2a8ab321fc4f6a12c5b62f88ce47502ae45081010706d983218f322cab7fa34"
+      "bytes": 1024,
+      "sha256": "4d15f1d6c927d5e60de7e6a9b6c9140e120f3a138cdc437f38f3e6d030a4f03b"
     },
     {
       "path": "background.png",
@@ -38,14 +38,14 @@
     {
       "path": "theme.css",
       "mediaType": "text/css",
-      "bytes": 2476,
-      "sha256": "77aec4745a492da6c0dffa99b71b65ae9d743d0e4816ca52fe2fe9b92e0d42bd"
+      "bytes": 2599,
+      "sha256": "24f2b92944aa142155073ff331c7e4ccabbeb2154509c1c0638024c84c335a3f"
     },
     {
       "path": "LICENSE.txt",
       "mediaType": "text/plain",
-      "bytes": 22966,
-      "sha256": "3fe0b0ebb56dae871bf0c7462dc093a9d0778ce3dcdcd1bbe95ced7a0a9030b3"
+      "bytes": 23488,
+      "sha256": "2196ddce040e2fdc2aca1d97445c5a9c5d1afed42c88191149d05c21b3ba61f4"
     }
   ],
   "createdAt": "2026-08-21T00:00:00Z"

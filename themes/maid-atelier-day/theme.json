@@ -9,24 +9,24 @@
   "statusText": "WHALE MAID ONLINE",
   "quote": "今天也一起把任务完成吧",
   "image": "background.png",
-  "appearance": "light",
+  "appearance": "dark",
   "art": {
     "focusX": 0.84,
     "focusY": 0.52,
     "safeArea": "left",
-    "taskMode": "ambient"
+    "taskMode": "full"
   },
   "colors": {
-    "background": "#dbe7f6",
-    "panel": "#f9fbff",
-    "panelAlt": "#e8f0fa",
-    "accent": "#245aa5",
-    "accentAlt": "#3978bd",
-    "secondary": "#526da0",
-    "highlight": "#8b5a2b",
-    "text": "#0b1b33",
-    "muted": "#465973",
-    "line": "rgba(31, 65, 111, 0.48)"
+    "background": "#263b56",
+    "panel": "#0d1b2f",
+    "panelAlt": "#162842",
+    "accent": "#8fc5ff",
+    "accentAlt": "#c2deff",
+    "secondary": "#87b7e8",
+    "highlight": "#ffd18a",
+    "text": "#f7fbff",
+    "muted": "#c7d4e4",
+    "line": "rgba(162, 202, 244, 0.55)"
   },
   "promoTitle": "Codex Deep Whale",
   "promoSub": "CC BY-NC-SA 4.0 · 完整署名见主题包",
