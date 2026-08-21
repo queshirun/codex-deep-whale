@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "codex-deep-whale.maid-night",
+  "name": "深海女仆工坊 · 夜间",
+  "brandSubtitle": "DEEP WHALE · CODEX",
+  "tagline": "鲸鱼娘原作：上善 · 女仆二创：ZipZipPipe",
+  "projectPrefix": "选择项目 · ",
+  "projectLabel": "◉  选择项目",
+  "statusText": "NIGHT SHIFT ONLINE",
+  "quote": "深海夜班，现在开始",
+  "image": "background.png",
+  "appearance": "dark",
+  "art": {
+    "focusX": 0.82,
+    "focusY": 0.52,
+    "safeArea": "left",
+    "taskMode": "ambient"
+  },
+  "colors": {
+    "background": "#050d1b",
+    "panel": "#0c1930",
+    "panelAlt": "#132544",
+    "accent": "#76a9ff",
+    "accentAlt": "#a8c8ff",
+    "secondary": "#3d79bf",
+    "highlight": "#d4a46a",
+    "text": "#edf4ff",
+    "muted": "#9aaccc",
+    "line": "rgba(118, 169, 255, 0.28)"
+  },
+  "promoTitle": "Codex Deep Whale",
+  "promoSub": "CC BY-NC-SA 4.0 · 完整署名见主题包",
+  "promoUrl": "https://github.com/queshirun/codex-deep-whale"
+}

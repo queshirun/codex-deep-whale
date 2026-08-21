@@ -1,0 +1,52 @@
+{
+  "packageVersion": 1,
+  "themeId": "codex-deep-whale.maid-night",
+  "version": "1.0.0",
+  "skinApiVersion": 1,
+  "minClientVersion": "1.5.0",
+  "platforms": [
+    "macos",
+    "windows"
+  ],
+  "capabilities": [
+    "background",
+    "tokens",
+    "safe-css"
+  ],
+  "publisher": {
+    "id": "queshirun",
+    "displayName": "queshirun · Codex Deep Whale port"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "provenance": {
+    "aiGenerated": true,
+    "summary": "Based on dsh-deep-whale artwork. OpenAI image tooling composited the moonlit palace and notebook-holding whale-maid, removed the second character, and reconstructed the background for Codex."
+  },
+  "files": [
+    {
+      "path": "theme.json",
+      "mediaType": "application/json",
+      "bytes": 990,
+      "sha256": "4964ae70cf74e4f4089729182e417646601614584818bcd67d5a90020c05e015"
+    },
+    {
+      "path": "background.png",
+      "mediaType": "image/png",
+      "bytes": 1883766,
+      "sha256": "5b7718951b773ce6fc5b206c35bb7907eb3fdc317b6dd909b54315982cba9d5f"
+    },
+    {
+      "path": "theme.css",
+      "mediaType": "text/css",
+      "bytes": 1537,
+      "sha256": "4bad1fe33c4466d163d4cc6c751ef98b69f7ea2814495a2458fe7ce860e92768"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mediaType": "text/plain",
+      "bytes": 22966,
+      "sha256": "3fe0b0ebb56dae871bf0c7462dc093a9d0778ce3dcdcd1bbe95ced7a0a9030b3"
+    }
+  ],
+  "createdAt": "2026-08-21T00:00:00Z"
+}
