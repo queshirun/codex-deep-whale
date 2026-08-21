@@ -1,7 +1,7 @@
 {
   "packageVersion": 1,
   "themeId": "codex-deep-whale.maid-night",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "skinApiVersion": 1,
   "minClientVersion": "1.5.0",
   "platforms": [
@@ -27,7 +27,7 @@
       "path": "theme.json",
       "mediaType": "application/json",
       "bytes": 990,
-      "sha256": "4964ae70cf74e4f4089729182e417646601614584818bcd67d5a90020c05e015"
+      "sha256": "a21329d4b94e37ccf191f5493b62f0e2ef9065a24ca67cf00d428b77b7772a27"
     },
     {
       "path": "background.png",
@@ -38,8 +38,8 @@
     {
       "path": "theme.css",
       "mediaType": "text/css",
-      "bytes": 1537,
-      "sha256": "4bad1fe33c4466d163d4cc6c751ef98b69f7ea2814495a2458fe7ce860e92768"
+      "bytes": 2443,
+      "sha256": "73f82306a31d8ebaec9fd2bf62f427daaae47e690c14acbab7cbc29967b4ebd8"
     },
     {
       "path": "LICENSE.txt",
@@ -50,3 +50,4 @@
   ],
   "createdAt": "2026-08-21T00:00:00Z"
 }
+
