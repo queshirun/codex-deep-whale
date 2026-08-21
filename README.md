@@ -11,13 +11,20 @@
 ## 下载与安装
 
 1. 安装并启动 [Codex Dream Skin](https://github.com/Fei-Away/Codex-Dream-Skin) 1.5.0 或更新版本。
-2. 从 [`dist/`](dist/) 下载想要的普通 `.zip` 文件：
-   - `codex-deep-whale-maid-day-v1.0.0.zip`
-   - `codex-deep-whale-maid-night-v1.0.0.zip`
+2. 从 [`dist/`](dist/) 下载最新的高可读性普通 `.zip` 文件：
+   - `codex-deep-whale-maid-day-v1.1.0.zip`
+   - `codex-deep-whale-maid-night-v1.1.0.zip`
 3. 在 macOS 菜单栏或 Windows 系统托盘选择“导入主题 ZIP…”。
 4. 导入成功后，在“已保存主题”中选择对应日间或夜间主题。
 
 主题包包含 Dream Skin 正式包所需的 `manifest.json`、`theme.json`、非空 `theme.css`、唯一背景图和 `LICENSE.txt`，支持 macOS 与 Windows。导入主题不会修改 Codex 官方安装包。
+
+### v1.1.0 高可读性更新
+
+- 背景图保持不变。
+- 提高正文、次级文字、图标继承色和边框的明暗对比。
+- 提高侧栏、消息、输入框及工具栏的表面不透明度，减少背景对 UI 的干扰。
+- 日间与夜间均保留右侧持笔记本鲸鱼娘，并让常用按钮和工具栏图标清晰可辨。
 
 ## 原作者与许可
 
@@ -47,3 +54,4 @@
 ```
 
 所有主题 CSS 只使用 Dream Skin 登记的 `data-ds-part` 部件和 Safe CSS 属性。
+
