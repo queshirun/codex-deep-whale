@@ -122,4 +122,3 @@ foreach ($package in $packages) {
 )
 
 Write-Host "Wrote $(Join-Path $outputRoot 'SHA256SUMS.txt')"
-
