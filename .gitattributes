@@ -1,0 +1,4 @@
+# Preserve the byte-exact files covered by Dream Skin manifest hashes.
+LICENSE -text
+themes/*/LICENSE.txt -text
+themes/*/manifest.json -text
