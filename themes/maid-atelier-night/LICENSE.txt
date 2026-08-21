@@ -35,6 +35,15 @@
 
 完整条款见仓库根目录 `LICENSE`，主题 ZIP 内也包含同样的署名和许可文本。
 
+## 软件组件说明
+
+完整兼容包中的增强 `dream-skin.css` 基于
+[Codex Dream Skin](https://github.com/Fei-Away/Codex-Dream-Skin) 的软件代码修改。
+该软件组件版权归 Codex Dream Skin Studio contributors 所有，并按 MIT License
+提供；完整 MIT 条款保存在 `compat/CODEX-DREAM-SKIN-LICENSE.txt`，发布包中亦
+保留 `CODEX-DREAM-SKIN-LICENSE.txt`。本节不改变上述美术素材与主题衍生内容的
+CC BY-NC-SA 4.0 许可要求。
+
 --- Full CC BY-NC-SA 4.0 license ---
 
 Attribution-NonCommercial-ShareAlike 4.0 International
