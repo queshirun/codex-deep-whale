@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "codex-deep-whale.maid-day",
+  "name": "深海女仆工坊 · 日间",
+  "brandSubtitle": "DEEP WHALE · CODEX",
+  "tagline": "鲸鱼娘原作：上善 · 女仆二创：ZipZipPipe",
+  "projectPrefix": "选择项目 · ",
+  "projectLabel": "◉  选择项目",
+  "statusText": "WHALE MAID ONLINE",
+  "quote": "今天也一起把任务完成吧",
+  "image": "background.png",
+  "appearance": "light",
+  "art": {
+    "focusX": 0.84,
+    "focusY": 0.52,
+    "safeArea": "left",
+    "taskMode": "ambient"
+  },
+  "colors": {
+    "background": "#e8f1ff",
+    "panel": "#f7faff",
+    "panelAlt": "#dbe8ff",
+    "accent": "#486aa7",
+    "accentAlt": "#75a7d9",
+    "secondary": "#7b91c9",
+    "highlight": "#c49a78",
+    "text": "#142547",
+    "muted": "#5c6f94",
+    "line": "rgba(63, 99, 157, 0.28)"
+  },
+  "promoTitle": "Codex Deep Whale",
+  "promoSub": "CC BY-NC-SA 4.0 · 完整署名见主题包",
+  "promoUrl": "https://github.com/queshirun/codex-deep-whale"
+}

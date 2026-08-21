@@ -1,0 +1,52 @@
+[data-ds-part="root"] {
+  color: var(--ds-theme-color-text);
+  font-family: ui-rounded, system-ui, sans-serif;
+}
+[data-ds-part="sidebar"] {
+  background-color: rgba(238, 245, 255, 0.88);
+  backdrop-filter: blur(var(--ds-theme-surface-blur)) saturate(1.1);
+  border-right-color: var(--ds-theme-color-line);
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+[data-ds-part="header"] {
+  background-color: rgba(247, 250, 255, 0.88);
+  border-bottom-color: var(--ds-theme-color-line);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+[data-ds-part="composer"] {
+  background-color: rgba(247, 250, 255, 0.94);
+  backdrop-filter: blur(var(--ds-theme-surface-blur)) saturate(1.08);
+  border-color: var(--ds-theme-color-line);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--ds-theme-surface-radius);
+  box-shadow: 0 10px 28px rgba(50, 76, 122, 0.16);
+}
+
+[data-ds-part="project-list"] {
+  background-color: rgba(247, 250, 255, 0.9);
+  border-color: var(--ds-theme-color-line);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--ds-theme-surface-radius);
+}
+
+[data-ds-part="message"] {
+  border-left-color: var(--ds-theme-color-accent-alt);
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+[data-ds-part="dialog"] {
+  background-color: rgba(247, 250, 255, 0.96);
+  backdrop-filter: blur(var(--ds-theme-surface-blur));
+  border-color: var(--ds-theme-color-line);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--ds-theme-surface-radius);
+  box-shadow: 0 14px 36px rgba(50, 76, 122, 0.2);
+}
