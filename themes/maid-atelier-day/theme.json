@@ -17,18 +17,19 @@
     "taskMode": "ambient"
   },
   "colors": {
-    "background": "#e8f1ff",
-    "panel": "#f7faff",
-    "panelAlt": "#dbe8ff",
-    "accent": "#486aa7",
-    "accentAlt": "#75a7d9",
-    "secondary": "#7b91c9",
-    "highlight": "#c49a78",
-    "text": "#142547",
-    "muted": "#5c6f94",
-    "line": "rgba(63, 99, 157, 0.28)"
+    "background": "#dbe7f6",
+    "panel": "#f9fbff",
+    "panelAlt": "#e8f0fa",
+    "accent": "#245aa5",
+    "accentAlt": "#3978bd",
+    "secondary": "#526da0",
+    "highlight": "#8b5a2b",
+    "text": "#0b1b33",
+    "muted": "#465973",
+    "line": "rgba(31, 65, 111, 0.48)"
   },
   "promoTitle": "Codex Deep Whale",
   "promoSub": "CC BY-NC-SA 4.0 · 完整署名见主题包",
   "promoUrl": "https://github.com/queshirun/codex-deep-whale"
 }
+
