@@ -10,7 +10,7 @@ $repositoryRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $outputRoot = [System.IO.Path]::GetFullPath($OutputDirectory)
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 $createdAt = '2026-08-21T00:00:00Z'
-$version = '1.0.0'
+$version = '1.1.0'
 
 $notice = [System.IO.File]::ReadAllText((Join-Path $repositoryRoot 'NOTICE.md'))
 $license = [System.IO.File]::ReadAllText((Join-Path $repositoryRoot 'LICENSE'))
@@ -122,3 +122,4 @@ foreach ($package in $packages) {
 )
 
 Write-Host "Wrote $(Join-Path $outputRoot 'SHA256SUMS.txt')"
+
