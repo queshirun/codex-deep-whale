@@ -8,7 +8,7 @@ param(
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
-$version = '1.4.2'
+$version = '1.4.6'
 $sourceCss = Join-Path $PSScriptRoot 'engine\windows\dream-skin.css'
 $targetCss = Join-Path $DreamSkinRoot 'engine\assets\dream-skin.css'
 $startScript = Join-Path $DreamSkinRoot 'engine\scripts\start-dream-skin.ps1'
@@ -29,6 +29,21 @@ if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch '--whale-mascot-wid
 }
 if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch 'Deep Whale header branding removal' -Quiet)) {
   throw '增强样式校验失败：缺少顶部主题名称隐藏规则。'
+}
+if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch 'Deep Whale home captions removal' -Quiet)) {
+  throw '增强样式校验失败：缺少新对话页主题与作者文字隐藏规则。'
+}
+if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch 'Deep Whale sidebar preview mascot' -Quiet)) {
+  throw '增强样式校验失败：缺少侧栏悬浮预览鲸鱼娘规则。'
+}
+if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch 'Deep Whale Windows titlebar glass' -Quiet)) {
+  throw '增强样式校验失败：缺少当前 Codex 顶部应用菜单栏毛玻璃规则。'
+}
+if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch 'Deep Whale home project glass' -Quiet)) {
+  throw '增强样式校验失败：缺少新对话页项目选择框毛玻璃规则。'
+}
+if (-not (Select-String -LiteralPath $sourceCss -SimpleMatch 'Deep Whale home project toolbar glass' -Quiet)) {
+  throw '增强样式校验失败：缺少输入框上方项目文件夹毛玻璃规则。'
 }
 
 New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null

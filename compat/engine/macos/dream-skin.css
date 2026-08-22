@@ -582,15 +582,21 @@ html[data-dream-skin="active"]
   main:is(.main-surface, [data-app-shell-main-surface], [class*="_MainContentSurface_"]):has([role="main"])::after {
   content: var(--dream-skin-quote, "MAKE SOMETHING WONDERFUL");
   position: absolute;
-  right: 28px;
-  bottom: 72px;
+  right: max(44px, calc((100% - var(--thread-content-max-width, 1440px)) / 2 + 34px));
+  bottom: 76px;
   z-index: 2;
+  max-width: min(320px, calc(100% - 220px));
+  overflow: hidden;
   pointer-events: none;
   color: rgb(var(--ds-accent-rgb) / .74);
   font: italic 14px/1.2 "Segoe Print", "Comic Sans MS", cursive;
   letter-spacing: 0;
+  text-align: right;
+  text-overflow: ellipsis;
   text-shadow: 0 0 13px rgb(var(--ds-accent-rgb) / .30);
   transform: rotate(-3deg);
+  transform-origin: right center;
+  white-space: nowrap;
 }
 
 html[data-dream-skin="active"][data-dream-shell="light"]
@@ -614,6 +620,37 @@ html[data-dream-skin="active"][data-dream-shell="dark"]
   [class~="group/application-menu-top-bar"] :is(button, svg) {
   color: var(--ds-text) !important;
   text-shadow: 0 1px 2px rgb(var(--ds-bg-rgb) / .82) !important;
+}
+
+/* Deep Whale Windows titlebar glass: current Codex builds use a generated
+   ApplicationMenuTopBar class instead of the former group utility class. The
+   container spans the menus and the native window-controls backdrop. */
+html[data-dream-skin="active"][style*="深海女仆工坊"][data-codex-window-chrome="application-menu"]
+  [class*="_ApplicationMenuTopBar_"] {
+  color: var(--ds-text) !important;
+  background:
+    linear-gradient(90deg,
+      rgb(var(--ds-panel-rgb) / .54),
+      rgb(var(--ds-panel-2-rgb) / .38) 56%,
+      rgb(var(--ds-panel-rgb) / .46)) !important;
+  border-bottom: 0 !important;
+  box-shadow:
+    inset 0 -1px rgb(var(--ds-text-rgb) / .10),
+    0 7px 24px rgb(var(--ds-bg-rgb) / .16) !important;
+  backdrop-filter: blur(20px) saturate(116%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(116%) !important;
+}
+
+html[data-dream-skin="active"][style*="深海女仆工坊"][data-codex-window-chrome="application-menu"]
+  [class*="_ApplicationMenuTopBar_"] :is(button, svg) {
+  color: rgb(var(--ds-text-rgb) / .90) !important;
+  text-shadow: 0 1px 3px rgb(var(--ds-bg-rgb) / .58) !important;
+}
+
+html[data-dream-skin="active"][style*="深海女仆工坊"][data-codex-window-chrome="application-menu"]
+  [class*="_ApplicationMenuTopBar_"] button:hover {
+  background: rgb(var(--ds-accent-rgb) / .12) !important;
+  color: var(--ds-text) !important;
 }
 
 html[data-dream-skin="active"] main:is(.main-surface, [data-app-shell-main-surface], [class*="_MainContentSurface_"]) [role="main"] {
@@ -1298,17 +1335,59 @@ html[data-dream-skin="active"][style*="深海女仆工坊"]
   display: none !important;
 }
 
-html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel {
+/* Deep Whale home captions removal: the native prompt, project picker and
+   suggestion cards remain visible; only the theme/author captions disappear. */
+html[data-dream-skin="active"][style*="深海女仆工坊"]
+  [role="main"]:has([data-testid="home-icon"]) [data-feature="game-source"]::before,
+html[data-dream-skin="active"][style*="深海女仆工坊"]
+  [role="main"]:has([data-testid="home-icon"]) [data-feature="game-source"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Deep Whale home project glass: add only a translucent backdrop to the
+   inline "选择项目 · PROJECT" control. Typography and text colors continue
+   to come from the existing Dream Skin and Codex rules. */
+html[data-dream-skin="active"][style*="深海女仆工坊"]
+  [role="main"]:has([data-testid="home-icon"]) [data-feature="game-source"] button {
+  background:
+    linear-gradient(135deg,
+      rgb(var(--ds-panel-rgb) / .58),
+      rgb(var(--ds-panel-2-rgb) / .42)) !important;
+  backdrop-filter: blur(16px) saturate(112%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(112%) !important;
+}
+
+/* Deep Whale home project toolbar glass: current Codex exposes the selected
+   folder above the composer through ActiveProjectSelectorTrigger. Only its
+   backdrop is changed; the native label and icon styling remain untouched. */
+html[data-dream-skin="active"][style*="深海女仆工坊"]
+  [role="main"]:has([data-testid="home-icon"]) [class*="_ActiveProjectSelectorTrigger_"] > button {
+  background:
+    linear-gradient(135deg,
+      rgb(var(--ds-panel-rgb) / .54),
+      rgb(var(--ds-panel-2-rgb) / .38)) !important;
+  backdrop-filter: blur(14px) saturate(110%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(110%) !important;
+}
+
+/* Deep Whale sidebar preview mascot: Codex uses a separate floating aside for
+   the hover preview, so both the docked and floating panels share one layer. */
+html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel,
+html[data-dream-skin="active"][style*="深海女仆工坊"] aside[data-testid="app-shell-floating-left-panel"] {
   position: relative !important;
 }
 
 html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel
+  > div:first-child,
+html[data-dream-skin="active"][style*="深海女仆工坊"] aside[data-testid="app-shell-floating-left-panel"]
   > div:first-child {
   position: relative;
   z-index: 1;
 }
 
-html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel::before {
+html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel::before,
+html[data-dream-skin="active"][style*="深海女仆工坊"] aside[data-testid="app-shell-floating-left-panel"]::before {
   content: "";
   position: absolute;
   --whale-mascot-width: 152px;
@@ -1330,7 +1409,8 @@ html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left
 }
 
 @media (max-height: 560px) {
-  html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel::before {
+  html[data-dream-skin="active"][style*="深海女仆工坊"] aside.app-shell-left-panel::before,
+  html[data-dream-skin="active"][style*="深海女仆工坊"] aside[data-testid="app-shell-floating-left-panel"]::before {
     --whale-mascot-width: 108px;
     width: var(--whale-mascot-width);
     height: 112px;

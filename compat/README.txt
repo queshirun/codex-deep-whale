@@ -1,12 +1,12 @@
-Codex Deep Whale v1.4.2 完整兼容包
+Codex Deep Whale v1.4.6 完整兼容包
 ==================================
 
 本包包含：
 
-1. themes/codex-deep-whale-maid-day-v1.4.2.zip
+1. themes/codex-deep-whale-maid-day-v1.4.6.zip
    可直接通过 Codex Dream Skin 导入的日间主题。
 
-2. themes/codex-deep-whale-maid-night-v1.4.2.zip
+2. themes/codex-deep-whale-maid-night-v1.4.6.zip
    可直接通过 Codex Dream Skin 导入的夜间主题。
 
 3. Install-Local-Enhancements.ps1
@@ -44,6 +44,12 @@ Q 版形象行为：
 - 背景图保持不变。
 - 顶部不再显示“深海女仆工坊 / DEEP WHALE · CODEX”和
   “WHALE MAID ONLINE / NIGHT SHIFT ONLINE”等主题介绍文字。
+- 新对话页不显示主题名和作者说明；收起侧栏后的悬浮预览也显示
+  与正式侧栏相同的 Q 版鲸鱼娘。
+- “今天也一起把任务完成吧”固定在输入框右上角安全区域内，不会越界
+  或覆盖输入框按钮。
+- 附件缩略图、输入正文和底部操作按钮使用 Gothic 同款原生整体容器，
+  不再出现上下两层背景或中间接缝。
 - 原生项目标题、更多菜单及窗口控制按钮保持显示。
 - 顶部状态栏使用柔和圆角毛玻璃。
 - 输入区底部以及“文件已更改”提示下方的黑色渐变已清除。

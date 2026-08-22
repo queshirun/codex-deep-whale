@@ -1,7 +1,7 @@
 {
   "packageVersion": 1,
   "themeId": "codex-deep-whale.maid-day",
-  "version": "1.4.2",
+  "version": "1.4.6",
   "skinApiVersion": 1,
   "minClientVersion": "1.5.0",
   "platforms": [
@@ -38,8 +38,8 @@
     {
       "path": "theme.css",
       "mediaType": "text/css",
-      "bytes": 2599,
-      "sha256": "24f2b92944aa142155073ff331c7e4ccabbeb2154509c1c0638024c84c335a3f"
+      "bytes": 1992,
+      "sha256": "cb21d217c84eb92686c91d83f489dde5456192340ec486c0ec7d763b59497282"
     },
     {
       "path": "LICENSE.txt",

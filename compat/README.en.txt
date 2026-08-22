@@ -1,12 +1,12 @@
-Codex Deep Whale v1.4.2 complete compatibility bundle
+Codex Deep Whale v1.4.6 complete compatibility bundle
 ======================================================
 
 Contents:
 
-1. themes/codex-deep-whale-maid-day-v1.4.2.zip
+1. themes/codex-deep-whale-maid-day-v1.4.6.zip
    Official-format daytime theme for Codex Dream Skin.
 
-2. themes/codex-deep-whale-maid-night-v1.4.2.zip
+2. themes/codex-deep-whale-maid-night-v1.4.6.zip
    Official-format nighttime theme for Codex Dream Skin.
 
 3. Install-Local-Enhancements.ps1
@@ -49,6 +49,12 @@ Visual behavior:
 - The original full background is preserved.
 - The decorative Deep Sea Maid Atelier / DEEP WHALE and ONLINE captions are
   hidden while the native project title, menus, and window buttons remain.
+- The new-chat theme and author captions are hidden, and the collapsed-sidebar
+  hover preview carries the same chibi whale maid as the docked sidebar.
+- The theme quote stays inside the composer-safe area and cannot overlap the
+  right-side controls.
+- Attachments, editable text, and footer controls share the same native
+  Gothic-style composer surface without stacked backgrounds or a seam.
 - The header and history sidebar use glass surfaces.
 - The composer and file-change dark gradient bands are removed.
 - The chibi whale maid stays fixed in size, moves with the sidebar, and is

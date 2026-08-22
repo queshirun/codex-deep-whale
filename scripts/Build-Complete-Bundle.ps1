@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
-$version = '1.4.2'
+$version = '1.4.6'
 $repositoryRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $outputRoot = [System.IO.Path]::GetFullPath($OutputDirectory)
 $utf8 = [System.Text.UTF8Encoding]::new($false)

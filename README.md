@@ -8,12 +8,18 @@
 | --- | --- |
 | ![深海女仆工坊日间](themes/maid-atelier-day/background.png) | ![深海女仆工坊夜间](themes/maid-atelier-night/background.png) |
 
-## v1.4.2 功能
+## v1.4.6 功能
 
 - 背景图保持完整，正文、图标和输入区使用高对比毛玻璃界面。
 - 左侧历史栏底部显示固定尺寸 Q 版鲸鱼娘；收起侧栏时同步移动并由窗口左边框裁切。
 - 清除输入区和“文件已更改”提示附近的黑色渐变边缘。
 - 隐藏顶部“深海女仆工坊 / DEEP WHALE · CODEX”和 `WHALE MAID ONLINE / NIGHT SHIFT ONLINE` 装饰文字，保留项目标题、菜单及窗口控制按钮。
+- 新对话页不再显示主题名与作者说明；侧栏悬浮预览也显示相同的 Q 版鲸鱼娘。
+- 将“今天也一起把任务完成吧”限制在输入框右上角安全区域，防止文字越界或覆盖按钮。
+- 输入框恢复 Dream Skin Gothic 的原生整体结构：附件、正文与底部按钮共用同一容器，不再分层。
+- 为当前 Codex 的顶部应用菜单栏增加连续毛玻璃层，覆盖“文件 / 编辑 / 视图 / 帮助”至窗口控制区，同时保持图标与点击区域清晰可用。
+- 为项目新对话标题中的“选择项目 · 项目名”增加独立毛玻璃背景，不改变原有字体、字号或文字颜色。
+- 为输入框上方当前项目文件夹名称增加透明毛玻璃背景，同样保留原生文字与图标样式。
 - 修复从 PowerShell 7 启动时 Dream Skin 误判注入器身份的问题。
 - 日间、夜间主题包均通过 Dream Skin 官方 Windows 与 macOS 包校验。
 
@@ -23,10 +29,10 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| `codex-deep-whale-complete-v1.4.2.zip` | Windows 推荐。包含日夜主题、增强引擎、安装脚本、素材和许可文件。 |
-| `codex-deep-whale-maid-day-v1.4.2.zip` | Dream Skin 官方格式的日间主题。 |
-| `codex-deep-whale-maid-night-v1.4.2.zip` | Dream Skin 官方格式的夜间主题。 |
-| `SHA256SUMS-v1.4.2.txt` | 下载文件的 SHA-256 校验值。 |
+| `codex-deep-whale-complete-v1.4.6.zip` | Windows 推荐。包含日夜主题、增强引擎、安装脚本、素材和许可文件。 |
+| `codex-deep-whale-maid-day-v1.4.6.zip` | Dream Skin 官方格式的日间主题。 |
+| `codex-deep-whale-maid-night-v1.4.6.zip` | Dream Skin 官方格式的夜间主题。 |
+| `SHA256SUMS-v1.4.6.txt` | 下载文件的 SHA-256 校验值。 |
 
 ## Windows 首次安装（推荐完整包）
 
@@ -36,7 +42,7 @@
 
 ### 2. 下载并解压完整包
 
-下载 `codex-deep-whale-complete-v1.4.2.zip`，完整解压到普通文件夹。不要直接在压缩包预览窗口中运行脚本。
+下载 `codex-deep-whale-complete-v1.4.6.zip`，完整解压到普通文件夹。不要直接在压缩包预览窗口中运行脚本。
 
 解压后应能看到：
 
@@ -73,8 +79,8 @@ powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File .\Install-Local-En
 
 1. 右键 Dream Skin 托盘图标；
 2. 选择“导入主题 ZIP…”；
-3. 导入 `themes/codex-deep-whale-maid-day-v1.4.2.zip`；
-4. 再导入 `themes/codex-deep-whale-maid-night-v1.4.2.zip`；
+3. 导入 `themes/codex-deep-whale-maid-day-v1.4.6.zip`；
+4. 再导入 `themes/codex-deep-whale-maid-night-v1.4.6.zip`；
 5. 在“已保存主题”中选择需要的主题。
 
 ## 日常换肤
@@ -109,8 +115,8 @@ powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File .\Install-Local-En
 ### 校验下载
 
 ```powershell
-Get-FileHash .\codex-deep-whale-complete-v1.4.2.zip -Algorithm SHA256
-Get-Content .\SHA256SUMS-v1.4.2.txt
+Get-FileHash .\codex-deep-whale-complete-v1.4.6.zip -Algorithm SHA256
+Get-Content .\SHA256SUMS-v1.4.6.txt
 ```
 
 两处哈希应一致。

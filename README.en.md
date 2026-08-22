@@ -8,12 +8,18 @@ This project ports the “Deep Sea Maid Atelier” skin from [dsh-deep-whale](ht
 | --- | --- |
 | ![Day theme](themes/maid-atelier-day/background.png) | ![Night theme](themes/maid-atelier-night/background.png) |
 
-## v1.4.2 features
+## v1.4.6 features
 
 - Preserves the full background while using high-contrast glass surfaces for text, icons, and the composer.
 - Adds a fixed-size chibi whale maid at the bottom of the history sidebar. It moves with the sidebar and is clipped by the left window edge when collapsed.
 - Removes dark gradient bands around the composer and file-change summary.
 - Hides the decorative `Deep Sea Maid Atelier / DEEP WHALE · CODEX` and `WHALE MAID ONLINE / NIGHT SHIFT ONLINE` captions while preserving the native project title, menus, and window controls.
+- Removes the theme and author captions from the new-chat page and adds the same chibi whale maid to the collapsed-sidebar hover preview.
+- Keeps the “Today, let’s finish the task together” quote inside the composer-safe area so it cannot overflow or cover controls.
+- Restores the native Gothic-style unified composer: attachments, text, and footer controls now share one container instead of separate layers.
+- Adds a continuous glass layer to the current Codex application-menu titlebar, spanning File / Edit / View / Help through the window-control area while preserving icon clarity and hit targets.
+- Adds a dedicated glass backdrop to the “Select project · Project name” control on project new-chat pages without changing its font, size, or text color.
+- Adds a translucent glass backdrop to the selected-project folder label above the composer while preserving its native text and icon styling.
 - Fixes Dream Skin injector identity detection when the installer is launched from PowerShell 7.
 - Both theme packages pass the official Dream Skin package checks on Windows and macOS.
 
@@ -23,10 +29,10 @@ Download the files from [Releases](https://github.com/queshirun/codex-deep-whale
 
 | File | Purpose |
 | --- | --- |
-| `codex-deep-whale-complete-v1.4.2.zip` | Recommended for Windows. Includes both themes, the enhanced engine, installer, assets, and license notices. |
-| `codex-deep-whale-maid-day-v1.4.2.zip` | Official-format daytime Dream Skin theme. |
-| `codex-deep-whale-maid-night-v1.4.2.zip` | Official-format nighttime Dream Skin theme. |
-| `SHA256SUMS-v1.4.2.txt` | SHA-256 checksums for the downloads. |
+| `codex-deep-whale-complete-v1.4.6.zip` | Recommended for Windows. Includes both themes, the enhanced engine, installer, assets, and license notices. |
+| `codex-deep-whale-maid-day-v1.4.6.zip` | Official-format daytime Dream Skin theme. |
+| `codex-deep-whale-maid-night-v1.4.6.zip` | Official-format nighttime Dream Skin theme. |
+| `SHA256SUMS-v1.4.6.txt` | SHA-256 checksums for the downloads. |
 
 ## First-time Windows installation
 
@@ -36,7 +42,7 @@ Install and start Dream Skin by following the [official Codex Dream Skin instruc
 
 ### 2. Download and extract the complete bundle
 
-Download `codex-deep-whale-complete-v1.4.2.zip` and extract every file to a normal folder. Do not run the installer from inside the Windows ZIP preview.
+Download `codex-deep-whale-complete-v1.4.6.zip` and extract every file to a normal folder. Do not run the installer from inside the Windows ZIP preview.
 
 The extracted directory should contain:
 
@@ -73,8 +79,8 @@ If prompted, save any unsent input and approve the restart. For later restarts, 
 
 1. Right-click the Dream Skin tray icon;
 2. Select **Import theme ZIP…**;
-3. Import `themes/codex-deep-whale-maid-day-v1.4.2.zip`;
-4. Import `themes/codex-deep-whale-maid-night-v1.4.2.zip`;
+3. Import `themes/codex-deep-whale-maid-day-v1.4.6.zip`;
+4. Import `themes/codex-deep-whale-maid-night-v1.4.6.zip`;
 5. Select either theme under **Saved themes**.
 
 ## Switching themes later
@@ -109,8 +115,8 @@ Extract the latest complete bundle, run the installer once, and select **Apply o
 ### Verify the download
 
 ```powershell
-Get-FileHash .\codex-deep-whale-complete-v1.4.2.zip -Algorithm SHA256
-Get-Content .\SHA256SUMS-v1.4.2.txt
+Get-FileHash .\codex-deep-whale-complete-v1.4.6.zip -Algorithm SHA256
+Get-Content .\SHA256SUMS-v1.4.6.txt
 ```
 
 The hashes should match.
